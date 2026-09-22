@@ -114,9 +114,9 @@ ORDER BY price_inr DESC
 LIMIT 5
 
 Output:
-('Boar Island (Anna Pigeon #19)', 6275.139999999999)
+('Boar Island (Anna Pigeon #19)', 6275.14)
 ("The No. 1 Ladies' Detective Agency (No. 1 Ladies' Detective Agency #1)", 6087.35)
-('Slow States of Collapse: Poems', 6046.205)
+('Slow States of Collapse: Poems', 6046.2)
 ('The Past Never Ends', 5960.75)
 ('Dune (Dune #1)', 5787.73)
 
