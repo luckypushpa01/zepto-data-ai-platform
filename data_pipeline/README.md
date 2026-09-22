@@ -293,3 +293,4 @@ Books in database: 67
 ```
 
 The SQL and pandas analysis then runs successfully using the generated SQLite database.
+This project was developed as part of a data engineering assignment.
