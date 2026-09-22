@@ -1,0 +1,197 @@
+Query 1:
+
+SELECT title, price_gbp
+FROM books
+WHERE price_gbp > 40
+
+Output:
+('Sharp Objects', 47.82)
+('The Past Never Ends', 56.5)
+('The Murder of Roger Ackroyd (Hercule Poirot #4)', 44.1)
+('The Last Mile (Amos Decker #2)', 54.21)
+('A Time of Torment (Charlie Parker #14)', 48.35)
+('Murder at the 42nd Street Library (Raymond Ambler #1)', 54.36)
+('Boar Island (Anna Pigeon #19)', 59.48)
+("The Bachelor Girl's Guide to Murder (Herringford and Watts Mysteries #1)", 52.3)
+('The Exiled', 43.45)
+("The No. 1 Ladies' Detective Agency (No. 1 Ladies' Detective Agency #1)", 57.7)
+("1st to Die (Women's Murder Club #1)", 53.98)
+('A Light in the Attic', 51.77)
+('The Black Maria', 52.15)
+('Slow States of Collapse: Poems', 57.31)
+('Night Sky with Exit Wounds', 41.05)
+('salt.', 46.78)
+('Quarter Life Poetry: Poems for the Young, Broke and Hangry', 50.89)
+('Out of Print: City Lights Spotlight No. 14', 53.64)
+('Howl and Other Poems', 40.45)
+('Leave This Song Behind: Teen Poetry at Its Best', 51.17)
+("William Shakespeare's Star Wars: Verily, A New Hope (William Shakespeare's Star Wars #4)", 43.3)
+('Sleeping Giants (Themis Files #1)', 48.74)
+('Dune (Dune #1)', 54.86)
+('Do Androids Dream of Electric Sheep? (Blade Runner #1)', 51.48)
+('Three Wishes (River of Time: California #1)', 44.18)
+
+Query 2:
+
+SELECT title, price_gbp
+FROM books
+ORDER BY price_gbp DESC
+
+Output:
+('Boar Island (Anna Pigeon #19)', 59.48)
+("The No. 1 Ladies' Detective Agency (No. 1 Ladies' Detective Agency #1)", 57.7)
+('Slow States of Collapse: Poems', 57.31)
+('The Past Never Ends', 56.5)
+('Dune (Dune #1)', 54.86)
+('Murder at the 42nd Street Library (Raymond Ambler #1)', 54.36)
+('The Last Mile (Amos Decker #2)', 54.21)
+("1st to Die (Women's Murder Club #1)", 53.98)
+('Out of Print: City Lights Spotlight No. 14', 53.64)
+("The Bachelor Girl's Guide to Murder (Herringford and Watts Mysteries #1)", 52.3)
+('The Black Maria', 52.15)
+('A Light in the Attic', 51.77)
+('Do Androids Dream of Electric Sheep? (Blade Runner #1)', 51.48)
+('Leave This Song Behind: Teen Poetry at Its Best', 51.17)
+('Quarter Life Poetry: Poems for the Young, Broke and Hangry', 50.89)
+('Sleeping Giants (Themis Files #1)', 48.74)
+('A Time of Torment (Charlie Parker #14)', 48.35)
+('Sharp Objects', 47.82)
+('salt.', 46.78)
+('Three Wishes (River of Time: California #1)', 44.18)
+('The Murder of Roger Ackroyd (Hercule Poirot #4)', 44.1)
+('The Exiled', 43.45)
+("William Shakespeare's Star Wars: Verily, A New Hope (William Shakespeare's Star Wars #4)", 43.3)
+('Night Sky with Exit Wounds', 41.05)
+('Howl and Other Poems', 40.45)
+('The Crossover', 38.77)
+('In the Woods (Dublin Murder Squad #1)', 38.38)
+('Mesaerion: The Best Science Fiction Stories 1800-1849', 37.59)
+('The Last Girl (The Dominion Trilogy #1)', 36.26)
+('Join', 35.67)
+('Most Wanted', 35.28)
+("Having the Barbarian's Baby (Ice Planet Barbarians #7.5)", 34.96)
+("You can't bury them all: Poems", 33.63)
+("Life, the Universe and Everything (Hitchhiker's Guide to the Galaxy #3)", 33.26)
+('Foundation (Foundation (Publication Order) #1)', 32.42)
+('Twenty Love Poems and a Song of Despair', 30.95)
+('Les Fleurs du Mal', 29.04)
+('The Widow', 27.26)
+('Poisonous (Max Revere Novels #3)', 26.8)
+('Soft Apocalypse', 26.12)
+('Extreme Prey (Lucas Davenport #26)', 25.4)
+('What Happened on Beale Street (Secrets of the South Mysteries #2)', 25.37)
+('The Mysterious Affair at Styles (Hercule Poirot #1)', 24.8)
+('Career of Evil (Cormoran Strike #3)', 24.72)
+('Olio', 23.88)
+('The Silkworm (Cormoran Strike #2)', 23.05)
+('Arena', 21.36)
+('Delivering the Truth (Quaker Midwife Mystery #1)', 20.89)
+("Shakespeare's Sonnets", 20.66)
+('Blood Defense (Samantha Brinkman #1)', 20.3)
+('In a Dark, Dark Wood', 19.63)
+("The Cuckoo's Calling (Cormoran Strike #1)", 19.21)
+('Ready Player One', 19.07)
+('Booked', 17.49)
+('A Study in Scarlet (Sherlock Holmes #1)', 16.73)
+('A Murder in Time', 16.64)
+('The Girl In The Ice (DCI Erika Foster #1)', 15.85)
+('The Collected Poems of W.B. Yeats (The Collected Works of W.B. Yeats #1)', 15.42)
+('Untitled Collection: Sabbath Poems 2014', 14.27)
+('Poems That Make Grown Women Cry', 14.19)
+('That Darkness (Gardiner and Renner #1)', 13.92)
+('Playing with Fire', 13.71)
+('The Girl You Lost', 12.29)
+('Hide Away (Eve Duncan #20)', 11.84)
+("The Restaurant at the End of the Universe (Hitchhiker's Guide to the Galaxy #2)", 10.92)
+('Tastes Like Fear (DI Marnie Rome #3)', 10.69)
+('The Project', 10.65)
+
+Query 3:
+
+SELECT title, price_inr
+FROM books
+ORDER BY price_inr DESC
+LIMIT 5
+
+Output:
+('Boar Island (Anna Pigeon #19)', 6275.139999999999)
+("The No. 1 Ladies' Detective Agency (No. 1 Ladies' Detective Agency #1)", 6087.35)
+('Slow States of Collapse: Poems', 6046.205)
+('The Past Never Ends', 5960.75)
+('Dune (Dune #1)', 5787.73)
+
+Query 4:
+
+SELECT DISTINCT rating
+FROM books
+ORDER BY rating
+
+Output:
+(1,)
+(2,)
+(3,)
+(4,)
+(5,)
+
+Query 5:
+
+SELECT title, rating
+FROM books
+WHERE rating IN (4, 5)
+ORDER BY rating DESC
+
+Output:
+('A Time of Torment (Charlie Parker #14)', 5)
+('What Happened on Beale Street (Secrets of the South Mysteries #2)', 5)
+("The Bachelor Girl's Guide to Murder (Herringford and Watts Mysteries #1)", 5)
+('The Silkworm (Cormoran Strike #2)', 5)
+('The Girl You Lost', 5)
+('Quarter Life Poetry: Poems for the Young, Broke and Hangry', 5)
+('Out of Print: City Lights Spotlight No. 14', 5)
+('Les Fleurs du Mal', 5)
+('Leave This Song Behind: Teen Poetry at Its Best', 5)
+('The Collected Poems of W.B. Yeats (The Collected Works of W.B. Yeats #1)', 5)
+('Booked', 5)
+('Join', 5)
+('Sharp Objects', 4)
+('The Past Never Ends', 4)
+('The Murder of Roger Ackroyd (Hercule Poirot #4)', 4)
+('Murder at the 42nd Street Library (Raymond Ambler #1)', 4)
+('Delivering the Truth (Quaker Midwife Mystery #1)', 4)
+('The Mysterious Affair at Styles (Hercule Poirot #1)', 4)
+("The No. 1 Ladies' Detective Agency (No. 1 Ladies' Detective Agency #1)", 4)
+("Shakespeare's Sonnets", 4)
+('Untitled Collection: Sabbath Poems 2014', 4)
+('Poems That Make Grown Women Cry', 4)
+('salt.', 4)
+('The Crossover', 4)
+('Twenty Love Poems and a Song of Despair', 4)
+("William Shakespeare's Star Wars: Verily, A New Hope (William Shakespeare's Star Wars #4)", 4)
+('Arena', 4)
+('Ready Player One', 4)
+("Having the Barbarian's Baby (Ice Planet Barbarians #7.5)", 4)
+
+Query 6:
+
+SELECT
+    b.title,
+    b.price_gbp,
+    c.category_name
+FROM books AS b
+JOIN categories AS c
+    ON b.category_id = c.category_id
+ORDER BY b.title
+LIMIT 10
+
+Output:
+("1st to Die (Women's Murder Club #1)", 53.98, 'Mystery')
+('A Light in the Attic', 51.77, 'Poetry')
+('A Murder in Time', 16.64, 'Mystery')
+('A Study in Scarlet (Sherlock Holmes #1)', 16.73, 'Mystery')
+('A Time of Torment (Charlie Parker #14)', 48.35, 'Mystery')
+('Arena', 21.36, 'Science Fiction')
+('Blood Defense (Samantha Brinkman #1)', 20.3, 'Mystery')
+('Boar Island (Anna Pigeon #19)', 59.48, 'Mystery')
+('Booked', 17.49, 'Poetry')
+('Career of Evil (Cormoran Strike #3)', 24.72, 'Mystery')
+
