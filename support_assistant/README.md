@@ -316,7 +316,7 @@ Observed response:
 ```bash
 curl -X POST http://127.0.0.1:7860/ask \
 -H "Content-Type: application/json" \
--d '{"query":"What is the capital of France?"}'
+-d '{"query":"What is the capital of India?"}'
 ```
 
 Observed response:
