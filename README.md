@@ -194,3 +194,5 @@ Each module contains its own README with module-specific details, implementation
 Submission
 
 This repository is intended to be submitted as one public GitHub repository containing all three modules at the repository root
+## Git Workflow
+
