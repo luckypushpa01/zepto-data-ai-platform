@@ -1,0 +1,12 @@
+fastapi
+uvicorn[standard]
+pydantic
+langgraph
+langchain-core
+langchain-groq
+sentence-transformers==3.0.1
+transformers==4.41.2
+torch==2.2.2
+numpy==1.26.4
+scipy==1.13.1
+chromadb
