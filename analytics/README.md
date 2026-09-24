@@ -118,11 +118,21 @@ The positive correlation between `sibsp` and `parch` indicates that passengers t
 Four multivariate charts were created:
 
 1. Survival rate by sex and passenger class.
+
+   Survival rates varied substantially by both sex and passenger class. Female passengers had higher survival rates than male passengers across all three classes, while survival generally decreased from first class to third class.
+
 2. Age versus fare by survival status and sex.
+
+   The scatter plot shows how age and fare vary across survival status and sex. Higher fares are concentrated more strongly among first-class passengers, while the survival groups show considerable overlap across ages and fares.
+
 3. Age distribution by passenger class and survival status.
+
+   Age distributions differ across passenger classes, with the box plots showing variation in median age and spread. Within each class, the age distributions of survivors and non-survivors overlap, indicating that age alone does not completely separate the two survival groups.
+
 4. Fare distribution by passenger class and survival status.
 
-These visualizations show that survival was associated with both sex and passenger class, while age and fare distributions showed substantial overlap between survivors and non-survivors.
+   Fare varies strongly across passenger classes, with first-class passengers generally paying higher fares than passengers in lower classes. Within each class, survivors and non-survivors show overlapping fare distributions, although differences in fare levels are visible between the survival groups.
+
 
 ## 6. EDA-Only Standardization
 
@@ -296,9 +306,7 @@ The residual spread widens as predicted fare increases, indicating heteroscedast
 
 ## 13. Final Model Selection
 
-For the Titanic classification task, the Random Forest achieved the highest test-set F1-score among the three original classifiers at 0.7424, with an accuracy of 0.8090 and recall of 0.7206. Logistic Regression achieved the highest ROC-AUC at 0.8610 and the highest precision at 0.7833, while the Decision Tree had an F1-score of 0.6441. The tuned Random Forest achieved a cross-validation F1-score of 0.7449 and an OOB score of 0.8073, but its test-set F1-score was 0.7328.
-
-The final saved classification pipeline uses the original Random Forest because it achieved the highest test-set F1-score among the original classifiers and stronger recall than Logistic Regression. The imbalance experiments showed that class weighting increased recall to 0.7500, while SMOTE produced balanced precision and recall of 0.7353. For fare prediction, Linear Regression achieved an MAE of 21.0986, RMSE of 41.7021, R² of 0.3482, and adjusted R² of 0.3091, with the residual plot indicating heteroscedasticity.
+For the Titanic classification task, the Random Forest achieved the highest test-set F1-score among the three original classifiers at 0.7424, with an accuracy of 0.8090 and recall of 0.7206. Logistic Regression achieved the highest ROC-AUC at 0.8610 and the highest precision at 0.7833, while the Decision Tree had an F1-score of 0.6441. The tuned Random Forest achieved a cross-validation F1-score of 0.7449 and an OOB score of 0.8073, but its test-set F1-score was 0.7328. The final saved classification pipeline therefore uses the original Random Forest, while the imbalance experiments showed that class weighting increased recall to 0.7500 and SMOTE produced balanced precision and recall of 0.7353. For fare prediction, Linear Regression achieved an MAE of 21.0986, RMSE of 41.7021, R² of 0.3482, and adjusted R² of 0.3091, with the residual plot indicating heteroscedasticity.
 
 ## 14. Saved Model Pipeline
 
