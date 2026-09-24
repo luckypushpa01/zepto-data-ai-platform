@@ -1,2 +1,7 @@
 __pycache__/
 .DS_Store
+
+# Module 3 generated files
+support_assistant/chroma_db/
+support_assistant/__pycache__/
+support_assistant/*.pyc
