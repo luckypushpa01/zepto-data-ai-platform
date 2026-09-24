@@ -134,6 +134,22 @@ results = cursor.fetchall()
 save_query_output(6, query6, results)
 
 # ============================================================
+# Query 7: BETWEEN
+# ============================================================
+
+query7 = """
+SELECT title, price_gbp
+FROM books
+WHERE price_gbp BETWEEN 20 AND 40
+ORDER BY price_gbp
+"""
+
+cursor.execute(query7)
+
+results = cursor.fetchall()
+
+save_query_output(7, query7, results)
+# ============================================================
 # Pandas: Read SQL query results into DataFrames
 # ============================================================
 
