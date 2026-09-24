@@ -311,3 +311,7 @@ Git workflow used for the project:
 6. The final repository is maintained on the `main` branch.
 
 The final submission therefore demonstrates feature-branch development, commits, a merge into `main`, and subsequent final documentation fixes.
+
+## Docker
+
+A Dockerfile is included for containerized deployment. Docker build/run testing was not performed locally because Docker is not installed in the development environment. The Dockerfile was verified against the FastAPI application configuration.
