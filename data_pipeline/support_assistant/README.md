@@ -42,3 +42,38 @@ LangGraph
         |
         v
 Pydantic AskResponse
+
+## FastAPI `/ask` Examples
+
+### 1. Policy retrieval question
+
+Request:
+
+```bash
+curl -X POST http://127.0.0.1:7860/ask \
+  -H "Content-Type: application/json" \
+  -d '{"query":"How long does Zepto delivery take?"}'                     
+curl -X POST http://127.0.0.1:7860/ask \
+  -H "Content-Type: application/json" \
+  -d '{"query":"What is the capital of France?"}'
+
+
+
+
+Example response:
+
+```json
+{
+  "answer": "Zepto typically delivers orders within 10 to 30 minutes of order confirmation.",
+  "sources": ["doc_01"],
+  "confidence": 1.0
+}### 2. General non-retrieval question
+
+Example response:
+
+```json
+{
+  "answer": "I can help with Zepto support and policy questions.",
+  "sources": [],
+  "confidence": 1.0
+}
