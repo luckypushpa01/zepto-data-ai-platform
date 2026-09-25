@@ -41,10 +41,9 @@ Dependencies are maintained separately for each module.
 From the `data_pipeline` directory:
 
 ```bash
-python3 -m pip install -r requirements.txt# Zepto Data & AI Platform
+python3 -m pip install -r requirements.txt
 
 A single public repository containing three project modules completed as part of the capstone:
-
 - `/data_pipeline` — Books to Scrape data pipeline, SQLite database, SQL analysis, and pandas analysis.
 - `/analytics` — Titanic exploratory data analysis, classification, imbalance handling, model tuning, and fare regression.
 - `/support_assistant` — Zepto policy RAG assistant using Sentence Transformers, ChromaDB, LangGraph, Pydantic, and FastAPI.
