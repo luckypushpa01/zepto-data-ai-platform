@@ -313,5 +313,4 @@ Git workflow used for the project:
 The final submission therefore demonstrates feature-branch development, commits, a merge into `main`, and subsequent final documentation fixes.
 
 ## Docker
-
-A Dockerfile is included for containerized deployment. Docker build/run testing was not performed locally because Docker is not installed in the development environment. The Dockerfile was verified against the FastAPI application configuration.
+A Dockerfile is included for containerized deployment. Docker build and runtime testing were successfully completed locally. The image `zepto-support` was built successfully, the container was started on port 7860, and the `/ask` endpoint was verified with both a policy retrieval query and a non-retrieval query.
