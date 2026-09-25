@@ -172,7 +172,7 @@ The application indexes the eight provided policy documents into ChromaDB, retri
 
 MOCK_LLM=1 provides a no-paid-service fallback for local execution.
 
-A Dockerfile is included for containerized deployment. Docker was not run locally because the development machine did not have sufficient free disk space.
+A Dockerfile is included for containerized deployment. Docker build and runtime testing were successfully completed locally. The image `zepto-support` was built successfully, the container was started on port 7860, and the `/ask` endpoint was verified with both a policy retrieval query and a non-retrieval query.
 
 Design Decisions
 Data Pipeline
