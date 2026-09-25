@@ -339,7 +339,10 @@ The container is configured to run:
 uvicorn support_assistant.main:app --host 0.0.0.0 --port 7860
 ```
 
-Docker Desktop was not run locally because the development Mac did not have sufficient free disk space. The Dockerfile is included for reproducible container deployment on a system with Docker available.
+A Dockerfile is included for containerized deployment. Docker runtime
+testing was not completed locally because Docker Desktop was not available
+due to insufficient free disk space. The Dockerfile is configured to run
+the FastAPI application on port 7860.
 
 ## Dependencies
 

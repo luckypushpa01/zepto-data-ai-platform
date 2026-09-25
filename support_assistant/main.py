@@ -1,8 +1,7 @@
 from fastapi import FastAPI
 from pydantic import BaseModel
 
-from support_assistant.rag import answer_query
-
+from .rag import answer_query
 
 app = FastAPI(title="Zepto Support Assistant")
 
