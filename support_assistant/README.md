@@ -339,11 +339,7 @@ The container is configured to run:
 uvicorn support_assistant.main:app --host 0.0.0.0 --port 7860
 ```
 
-A Dockerfile is included for containerized deployment. Docker runtime
-testing was not completed locally because Docker Desktop was not available
-due to insufficient free disk space. The Dockerfile is configured to run
-the FastAPI application on port 7860.
-
+Docker build and runtime testing were successfully completed locally. The image `zepto-support` was built successfully, the container was started on port 7860, and the `/ask` endpoint was verified with both a policy retrieval query and a non-retrieval query.
 ## Dependencies
 
 The main dependencies include:
