@@ -195,4 +195,13 @@ Submission
 
 This repository is intended to be submitted as one public GitHub repository containing all three modules at the repository root
 ## Git Workflow
+Git workflow used for the project:
 
+1. Development work was completed on feature branches.
+2. Changes were committed with descriptive commit messages.
+3. The `final-submission-readme` branch was used for final submission documentation.
+4. The `final-submission-readme` branch was merged into `main`.
+5. Final fixes were committed on `main` and pushed to the GitHub repository.
+6. The final repository is maintained on the `main` branch.
+
+The final submission therefore demonstrates feature-branch development, multiple commits, a merge into `main`, and subsequent final fixes.
