@@ -42,6 +42,7 @@ From the `data_pipeline` directory:
 
 ```bash
 python3 -m pip install -r requirements.txt
+```
 
 A single public repository containing three project modules completed as part of the capstone:
 - `/data_pipeline` — Books to Scrape data pipeline, SQLite database, SQL analysis, and pandas analysis.
